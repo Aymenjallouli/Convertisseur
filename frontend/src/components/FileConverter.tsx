@@ -51,7 +51,7 @@ interface ConversionTask {
   error?: string | ErrorResponse;
 }
 
-const API_BASE = 'https://convertisseur-beta.vercel.app';
+const API_BASE = 'https://aymenjallouli.pythonanywhere.com';
 
 const SUPPORTED_FORMATS = {
   'Document': ['docx', 'txt', 'pdf'],
