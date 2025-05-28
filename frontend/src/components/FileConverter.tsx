@@ -51,7 +51,7 @@ interface ConversionTask {
   error?: string | ErrorResponse;
 }
 
-const API_BASE = 'http://localhost:8000';
+const API_BASE = 'https://convertisseur-beta.vercel.app';
 
 const SUPPORTED_FORMATS = {
   'Document': ['docx', 'txt', 'pdf'],
