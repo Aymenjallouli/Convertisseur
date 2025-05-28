@@ -1,0 +1,81 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.dropzone {
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.dropzone:hover {
+  border-color: #1976d2;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.dropzone.active {
+  border-color: #1976d2;
+  background: rgba(25, 118, 210, 0.1);
+}
+
+.file-info {
+  margin: 20px 0;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  border-left: 4px solid #1976d2;
+}
+
+.conversion-progress {
+  margin: 20px 0;
+}
+
+.format-selector {
+  margin: 20px 0;
+}
+
+.convert-button {
+  margin: 20px 0;
+}
+
+.download-section {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .App {
+    padding: 10px;
+  }
+  
+  .dropzone {
+    padding: 30px 15px;
+  }
+}
