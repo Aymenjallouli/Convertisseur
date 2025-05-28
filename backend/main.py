@@ -27,8 +27,9 @@ app.add_middleware(
 )
 
 # Dossiers pour les fichiers
-UPLOAD_FOLDER = Path("../uploads")
-CONVERTED_FOLDER = Path("../converted")
+BASE_DIR = Path(__file__).resolve().parent
+UPLOAD_FOLDER = BASE_DIR / "uploads"
+CONVERTED_FOLDER = BASE_DIR / "converted"
 
 # Créer les dossiers s'ils n'existent pas
 UPLOAD_FOLDER.mkdir(exist_ok=True)
